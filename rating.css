@@ -1,0 +1,23 @@
+.rating {
+    display: inline-block;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating i.fa {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.rating input[type="radio"]:checked ~ label i.fa:before {
+    color: #f90;
+    content: "\f005";
+}
+
+.rating label:hover i.fa:before,
+.rating label:hover ~ label i.fa:before {
+    color: #f90;
+    content: "\f005";
+}
